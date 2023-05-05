@@ -49,35 +49,44 @@
         <!-- 카테고리별 내비게이션(메뉴) 영역 -->
         <ul class="navigation__list">
           <li>
-            <a href="/" aria-role="button">패션의류/잡화 </a>
-            <ul class="hidden">
-              <li>
-                <a href="/" aria-role="button">여성패션</a>
-                <ul class="hidden">
-                  <li><a href="/">의류</a></li>
-                  <li><a href="/">속옷/잠옷</a></li>
-                  <li><a href="/">신발</a></li>
-                </ul>
-              </li>
-              <li>남성패션</li>
-              <li>유아동패션</li>
-            </ul>
+            <a href="/" role="button"
+              ><i class="icon-clothes"></i>패션의류/잡화
+            </a>
+
+            <div class="level2">
+              <ul class="hidden">
+                <li>
+                  <a href="/" role="button">여성패션</a>
+
+                  <div class="level3">
+                    <ul class="hidden">
+                      <li><a href="/">의류</a></li>
+                      <li><a href="/">속옷/잠옷</a></li>
+                      <li><a href="/">신발</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>남성패션</li>
+                <li>유아동패션</li>
+              </ul>
+            </div>
           </li>
-          <li>뷰티</li>
-          <li>출산유아동</li>
-          <li>식품</li>
-          <li>주방용품</li>
-          <li>생활용품</li>
-          <li>홈인테리어</li>
-          <li>가전디지털</li>
-          <li>스포츠</li>
-          <li>자동차용품</li>
-          <li>도서음반</li>
-          <li>완구취미</li>
-          <li>문구오피스</li>
-          <li>반려동물</li>
-          <li>여행티켓</li>
-          <li>테마관</li>
+
+          <li><i class="icon-beauty"></i>뷰티</li>
+          <li><i class="icon-baby"></i>출산유아동</li>
+          <li><i class="icon-foods"></i>식품</li>
+          <li><i class="icon-kitchenware"></i>주방용품</li>
+          <li><i class="icon-houseware"></i>생활용품</li>
+          <li><i class="icon-interior"></i>홈인테리어</li>
+          <li><i class="icon-appliances"></i>가전디지털</li>
+          <li><i class="icon-sports"></i>스포츠</li>
+          <li><i class="icon-car"></i>자동차용품</li>
+          <li><i class="icon-book"></i>도서음반</li>
+          <li><i class="icon-toy"></i>완구취미</li>
+          <li><i class="icon-stationery"></i>문구오피스</li>
+          <li><i class="icon-pet"></i>반려동물</li>
+          <li><i class="icon-travel"></i>여행티켓</li>
+          <li><i class="icon-theme"></i>테마관</li>
         </ul>
       </div>
     </nav>
@@ -90,6 +99,110 @@
     <footer class="footer">
       <!-- 푸터 영역 -->
       <!-- 푸터 관련 콘텐츠는 .footer 영역 안에 마크업 해주세요. -->
+      <div class="footer-nav">
+        <p>인재채용</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>입점 / 제휴문의</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>공지사항</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>고객의 소리</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p class="bold">개인정보 처리방침</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>쿠팡페이 이용약관</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p class="bold">쿠팡페이 개인정보 처리방침</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>신뢰관리센터</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>제휴마케팅</p>
+        <span class="divider" aria-hidden="true">ㅣ</span>
+        <p>광고안내</p>
+      </div>
+
+      <div class="all-info">
+        <div class="logo"><h1>Coupang</h1></div>
+
+        <div class="management">
+          <p>상호명 및 호스팅 서비스 제공 : 쿠팡(주)</p>
+          <p>대표이사 : 강한승, 박대준</p>
+          <p>서울시 송파구 송파대로 570</p>
+          <p>사업자 등록번호 : 120-88-00767</p>
+          <p>통신판매업신고 : 2017-서울송파-0680</p>
+        </div>
+
+        <div class="customer-service">
+          <p class="bold">365고객센터</p>
+          <span>전자금융거래분쟁처리담당</span>
+          <p class="tel"><a href="tel:1577-7011">1577-7011</a></p>
+          <p>서울시 송파구 송파대로 570</p>
+          <p class="email">
+            <a href="mailto:help@coupang.com?subject:문의사항"
+              >email : help@coupang.com</a
+            >
+          </p>
+        </div>
+
+        <div class="bank-info">
+          <p class="bold">우리은행 채무지급보증 안내</p>
+          <p>
+            당사는 고객님이 현금 결제한 금액에 대해 <br />
+            우리은행과 채무지급보증 계약을 체결하여 <br />
+            안전거래를 보장하고 있습니다.
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-last">
+        <div class="copyRight">
+          <p>
+            사이버몰 내 판매되는 상품 중에는 쿠팡에 등록한 개별 판매자가
+            판매하는 마켓플레이스(오픈마켓) 상품이 포함되어 있습니다.<br />
+            마켓플레이스(오픈마켓) 상품의 경우 쿠팡은 통신판매중개자이며
+            통신판매의 당사자가 아닙니다.<br />
+            쿠팡은 마켓플레이스(오픈마켓) 상품, 거래정보 및 거래 등에 대하여
+            책임을 지지 않습니다.<br />
+            쿠팡은 소비자 보호와 안전거래를 위해
+            신뢰관리센터(CM112@coupang.com)를 운영하고 있으며, 관련 분쟁이
+            발생할 경우 별도의 분쟁처리절차에 의거 분쟁이 처리됩니다.<br />
+            Copyright ⓒ Coupang Corp. 2010-2020 All Right Reserved.
+          </p>
+        </div>
+
+        <div class="sns">
+          <div class="facebook">
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+              <img
+                src="./assets/icon/sns-facebook.svg"
+                alt="쿠팡 페이스북 계정으로 이동"
+              />
+            </a>
+          </div>
+
+          <div class="blog">
+            <a
+              href="https://section.blog.naver.com/"
+              target="_blank"
+              rel="noopener"
+            >
+              <img
+                src="./assets/icon/sns-naver-blog.svg"
+                alt="쿠팡 네이버 블로그 계정으로 이동"
+              />
+            </a>
+          </div>
+
+          <div class="instagram">
+            <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+              <img
+                src="./assets/icon/sns-instagram.svg"
+                alt="쿠팡 인스타그램 계정으로 이동"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

@@ -1,10 +1,57 @@
+body {
+  width: 100vw;
+  height: 1024px;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
 /* ---------------------------------------------- */
 /* 헤더                                            */
 /* ---------------------------------------------- */
 
+.header {
+  position: relative;
+  left: 350px;
+}
+
+.button--category {
+  width: 110px;
+  height: 116px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blue-600);
+  border: none;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-white);
+}
+
+.button--category svg {
+  margin-bottom: 12px;
+}
+
+.button--category:focus-visible {
+  outline: none;
+  border-radius: 4px;
+  box-shadow: 0 0 0 2px var(--color-red-500);
+}
+
 /* ---------------------------------------------- */
 /* 내비게이션                                        */
 /* ---------------------------------------------- */
+
+.navigation {
+  width: 1020px;
+  height: 520px;
+  position: absolute;
+  left: 350px;
+  top: 116px;
+}
 
 .hidden-navTitle {
   position: absolute;
@@ -13,6 +60,44 @@
   margin: -1px;
   overflow: hidden;
   clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.navigation__list {
+  width: 540px;
+  height: 500px;
+  position: relative;
+  box-shadow: 0px 4px 4px var(--color-opacity-20);
+}
+
+.navigation__list i {
+  margin-right: 8px;
+}
+
+/* .navigation__list li:first-of-type:hover {
+  .level2 {
+    display: block;
+  }
+} */
+
+.navigation__list .level2 {
+  /* display: none; */
+  position: absolute;
+  left: 180px;
+  top: 0;
+}
+
+.navigation__list .level2 .level3 {
+  /* display: none; */
+  position: absolute;
+  left: 180px;
+  top: 0;
+}
+
+.is--active {
+  .is--active li:first-of-type {
+    color: var(--color-blue-600);
+    font-weight: 700;
+  }
 }
 
 /* ---------------------------------------------- */
@@ -26,3 +111,149 @@
 /* ---------------------------------------------- */
 /* 푸터                                            */
 /* ---------------------------------------------- */
+
+.footer {
+  width: 100%;
+  height: 349px;
+}
+
+.footer-nav {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-gray-200);
+}
+
+.footer-nav p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--color-gray-800);
+  padding: 1px 14px 6px;
+}
+
+.footer-nav .bold {
+  font-weight: 700;
+}
+
+.footer-nav .divider {
+  position: relative;
+  top: 10px;
+  color: var(--color-gray-800);
+}
+
+.all-info {
+  width: 100%;
+  height: 207px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.all-info .logo {
+  width: 176px;
+  height: 40px;
+  position: relative;
+  top: 14px;
+  background-image: url('../../assets/logo/logo-mono.svg');
+  background-repeat: no-repeat;
+}
+
+.all-info h1 {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.all-info .management {
+  /* width: 265px;
+  height: 143px; */
+  margin-left: 63px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-800);
+}
+
+.all-info .management p {
+  margin-bottom: 12px;
+}
+
+.all-info .customer-service {
+  width: 296px;
+  margin-left: 62px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-800);
+}
+
+.all-info .customer-service p {
+  margin-bottom: 12px;
+}
+
+.all-info .customer-service p:first-of-type {
+  display: inline-block;
+  padding-right: 15px;
+  border-right: 1px solid var(--color-gray-800);
+}
+
+.all-info .customer-service span {
+  padding-left: 11px;
+}
+
+.all-info .customer-service .tel {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.all-info .bank-info {
+  margin-left: 62px;
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--color-gray-800);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.footer-last {
+  width: 100%;
+  height: 102px;
+  background-color: var(--color-gray-900);
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--color-gray-200);
+}
+
+.footer-last .copyRight {
+  margin-top: 0 auto;
+}
+
+.footer-last .sns {
+  display: flex;
+  margin-left: 50px;
+  margin-top: 45px;
+  gap: 10px;
+}
+
+.footer-last .sns .instagram {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: linear-gradient(
+    174.12deg,
+    #285aeb 5.61%,
+    #bc1888 22.32%,
+    #cc2366 36.16%,
+    #dc2743 51.91%,
+    #e6683c 73.38%,
+    #f09433 91.99%
+  );
+}
