@@ -1,5 +1,5 @@
 body {
-  width: 100vw;
+  width: 1920px;
   height: 1024px;
   margin: 0;
 }
@@ -14,7 +14,7 @@ li {
 
 .header {
   position: relative;
-  left: 350px;
+  left: 395px;
 }
 
 .button--category {
@@ -49,7 +49,7 @@ li {
   width: 1020px;
   height: 520px;
   position: absolute;
-  left: 350px;
+  left: 395px;
   top: 116px;
 }
 
@@ -66,7 +66,35 @@ li {
   width: 540px;
   height: 500px;
   position: relative;
+  padding-left: 25px;
+
+  font-size: 12px;
+  font-weight: 400;
   box-shadow: 0px 4px 4px var(--color-opacity-20);
+}
+
+.is--active {
+  font-weight: 700;
+  color: var(--color-blue-600);
+  background-image: url('https://www.figma.com/file/8rBfzQD4FcHFPEoRNOQlU7/Navigation_Footer?type=design&node-id=208-1474&t=46jI2OSxm34JnPgP-4');
+  .level2 {
+    display: block;
+  }
+}
+
+.active:hover,
+.active:focus {
+  font-weight: 700;
+  color: var(--color-blue-600);
+}
+
+.navigation__list ul {
+  padding-left: 25px;
+}
+
+.navigation__list li {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
 .navigation__list i {
@@ -89,7 +117,7 @@ li {
 .navigation__list .level2 .level3 {
   /* display: none; */
   position: absolute;
-  left: 180px;
+  right: -175px;
   top: 0;
 }
 
@@ -98,6 +126,18 @@ li {
     color: var(--color-blue-600);
     font-weight: 700;
   }
+}
+
+.navigation__list::after,
+.level2::after {
+  display: inline-block;
+  content: '';
+  width: 1px;
+  height: 500px;
+  position: absolute;
+  left: 180px;
+  top: 0;
+  background-color: var(--color-gray-200);
 }
 
 /* ---------------------------------------------- */
@@ -113,8 +153,9 @@ li {
 /* ---------------------------------------------- */
 
 .footer {
-  width: 100%;
+  width: 1920px;
   height: 349px;
+  margin-top: 40px;
 }
 
 .footer-nav {
