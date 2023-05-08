@@ -70,13 +70,28 @@ li {
 
   font-size: 12px;
   font-weight: 400;
-  box-shadow: 0px 4px 4px var(--color-opacity-20);
+  box-shadow: 0px 3px 3px var(--color-opacity-20);
+}
+
+.arrow {
+  display: none;
+  background-image: url('../../assets/icon/more-right-active.svg');
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 156px;
 }
 
 .is--active {
-  font-weight: 700;
-  color: var(--color-blue-600);
-  background-image: url('https://www.figma.com/file/8rBfzQD4FcHFPEoRNOQlU7/Navigation_Footer?type=design&node-id=208-1474&t=46jI2OSxm34JnPgP-4');
+  /* .navigation__list > li > a {
+    font-weight: 700;
+    color: var(--color-blue-600);
+    .arrow {
+      display: block;
+    }
+  } */
   .level2 {
     display: block;
   }
@@ -86,10 +101,6 @@ li {
 .active:focus {
   font-weight: 700;
   color: var(--color-blue-600);
-}
-
-.navigation__list ul {
-  padding-left: 25px;
 }
 
 .navigation__list li {
@@ -108,25 +119,26 @@ li {
 } */
 
 .navigation__list .level2 {
-  /* display: none; */
+  display: none;
   position: absolute;
   left: 180px;
   top: 0;
+  padding-left: 25px;
 }
 
 .navigation__list .level2 .level3 {
-  /* display: none; */
+  display: none;
   position: absolute;
   right: -175px;
   top: 0;
 }
 
-.is--active {
+/* .is--active {
   .is--active li:first-of-type {
     color: var(--color-blue-600);
     font-weight: 700;
   }
-}
+} */
 
 .navigation__list::after,
 .level2::after {
